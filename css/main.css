@@ -809,9 +809,18 @@ img {
   text-align: center;
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
+  color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .team-list {
@@ -919,13 +928,21 @@ img {
 }
 
 .clients__header {
+  text-align: center;
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__header {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .clients-list {
@@ -995,6 +1012,12 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .bottom__contacts {
+    margin-bottom: 60px;
+  }
+}
+
 .bottom__container {
   display: flex;
 }
@@ -1007,7 +1030,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .bottom__container {
-    display: flex;
     justify-content: space-between;
   }
 }
@@ -1016,6 +1038,12 @@ img {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .bottom__logo-address {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1031,7 +1059,7 @@ img {
 }
 
 /* -logo- */
-.logo--position {
+.logo--footer-position {
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -1041,13 +1069,19 @@ img {
 }
 
 /* -adress- */
-.address {
-  margin-bottom: 60px;
-}
-
 @media screen and (min-width: 1200px) {
   .address {
     margin-bottom: 0px;
+  }
+}
+
+.address-list__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address-list__item:not(:last-child) {
+    margin-bottom: 9px;
   }
 }
 
@@ -1064,6 +1098,10 @@ img {
 
 .address-list__link:hover, .address-list__link:focus {
   color: #2196f3;
+}
+
+.address-list__link--contacts-color {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1100,13 +1138,6 @@ img {
 .socials {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .socials {
-    margin-bottom: 0px;
-  }
 }
 
 .socials__link--color-bottom {

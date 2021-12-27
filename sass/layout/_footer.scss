@@ -8,6 +8,9 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 .bottom__container {
   display: flex;
@@ -15,7 +18,6 @@
     flex-direction: column;
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
     justify-content: space-between;
   }
 }
@@ -23,6 +25,9 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 76px;
   }
@@ -34,7 +39,7 @@
 .logo {
   @extend %logo;
 }
-.logo--position {
+.logo--footer-position {
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -43,16 +48,21 @@
 }
 /* -adress- */
 .address {
-  // margin-right: 70px;
-  margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
     margin-bottom: 0px;
+  }
+}
+.address-list__item:not(:last-child) {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-bottom: 9px;
+    }
   }
 }
 .address-list__link {
   display: inline-block;
   margin: 0 auto;
-  // margin-bottom: 9px;
   color: $adress-location-text-color;
   font-style: normal;
   font-weight: 400;
@@ -63,6 +73,9 @@
   &:focus {
     color: $hover-focus-color;
   }
+}
+.address-list__link--contacts-color {
+  color: rgba(255, 255, 255, 0.6);
 }
 // bottom social links
 .bottom__socials {
@@ -93,10 +106,6 @@
 .socials {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 0px;
-  }
 }
 .socials__item {
   @extend %social-item;

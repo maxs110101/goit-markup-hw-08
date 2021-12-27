@@ -70,7 +70,6 @@
   background-position: center;
   background-color: #f5f4fa;
 }
-
 // .advantages-list__item:not(:last-child) {
 //   margin-right: 30px;
 // }
@@ -134,16 +133,18 @@
 }
 .team__title {
   color: $main-headers-color;
-  // margin-left: 450px;
-  // margin: auto;
   text-align: center;
-  // width: 265px;
-  // height: 42px;
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  color: $main-headers-color;
 }
 .team-list {
   // display: flex;
@@ -250,13 +251,17 @@
   }
 }
 .clients__header {
-  // margin-bottom: 50px;
+  text-align: center;
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
   color: $main-headers-color;
 }
 .clients-list {
